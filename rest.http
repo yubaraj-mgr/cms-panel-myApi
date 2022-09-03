@@ -1,0 +1,44 @@
+### check server status
+GET http://localhost:8000/
+
+#=== Adin API
+
+### pot new admin user
+POST http://localhost:8000/api/v1/admin-user
+Content-Type: application/json
+
+{
+    "fName": "Yubaraj",
+    "lName": "Magar",
+    "email": "yubaraj.1000mgr@gmail.com",
+    "password": "123456",
+    "phone": "0414257573",
+    "address": "39 Telopea Ave, HomebushWest",
+    "dob": "2020-02-20"
+}
+
+
+### pot new admin user
+POST http://localhost:8000/api/v1/admin-user/login
+Content-Type: application/json
+
+{
+    "email": "yubaraj.100mgr@gmail.com",
+    "password": "123456"
+}
+
+
+###
+POST http://localhost:8000/api/v1/category
+Content-Type: application/json
+
+{
+    "status": "active",
+    "name": "sdfsdfs",
+    "parentId": ""
+}
+
+
+###
+GET  http://localhost:8000/api/v1/category/
+Content-Type: application/json
